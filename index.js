@@ -9,7 +9,9 @@ app.use(
     extended: true
     })
 ) // for parsing application/x-www-form-urlencoded
-
+app.get('/', function (req, res) {
+    res.send('Index');
+  });
 //Rhis is the route API will call
 app.post('/new-message',function(req,res){
     const { message } = req.body
