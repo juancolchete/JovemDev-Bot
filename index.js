@@ -28,7 +28,7 @@ app.post('/new-message',function(req,res){
     // Remember to use your own API toked instead of the one below  "https://api.telegram.org/bot<your_api_token>/sendMessage"
     axios
     .post(
-        'https://api.telegram.org/bot1320348444:AAEbeKsURrNmyDjSRr-cJaV5_vQtCkTEizU/sendMessage',
+        'https://api.telegram.org/{{TelegramToken}}/sendMessage',
         {
             chat_id: message.chat_id,
             text:'Se inscreva na Twitch'
